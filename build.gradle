@@ -35,4 +35,6 @@ jar {
 }
 
 apply plugin: 'application'
-mainClassName = "com.jee.cdi.plainQualifiersImpl.Main"
+//mainClassName = "com.jee.cdi.plainQualifiersImpl.Main"
+//mainClassName = "com.jee.cdi.vetoImpl.Main"
+mainClassName = "com.jee.cdi.alternativeImpl.Main"
