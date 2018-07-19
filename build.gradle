@@ -22,7 +22,12 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12 '
     compileOnly group: 'javax.enterprise', name: 'cdi-api', version: '2.0'
     compile group: 'javax.annotation', name: 'javax.annotation-api', version: '1.3.2'
-    //compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    // https://mvnrepository.com/artifact/com.h2database/h2
+    runtime group: 'com.h2database', name: 'h2', version: '1.3.148'
+// https://mvnrepository.com/artifact/org.apache.derby/derby
+    runtime group: 'org.apache.derby', name: 'derby', version: '10.14.2.0'
+
 }
 
 jar {
@@ -37,4 +42,8 @@ jar {
 apply plugin: 'application'
 //mainClassName = "com.jee.cdi.plainQualifiersImpl.Main"
 //mainClassName = "com.jee.cdi.vetoImpl.Main"
-mainClassName = "com.jee.cdi.alternativeImpl.Main"
+
+//mainClassName = "com.jee.cdi.alternativeImpl.Main"
+//mainClassName = "com.jee.cdi.producers.Main"
+//mainClassName = "com.jee.cdi.demo04.Main"
+mainClassName = "com.jee.cdi.interceptors.Main"

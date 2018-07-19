@@ -5,8 +5,11 @@ import com.jee.cdi.qualifiers.GeneratorV2;
 import com.jee.cdi.qualifiers.NumberOfDigits;
 
 import javax.inject.Inject;
+import java.lang.annotation.Repeatable;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
-
+//@com.jee.cdi.qualifiers.Dummy
 public class BookService {
 
     @Inject @GeneratorV2(NumberOfDigits.NINE)

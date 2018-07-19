@@ -1,5 +1,6 @@
 package com.jee.cdi.qualifiers;
 
+import javax.el.ELException;
 import javax.inject.Qualifier;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -8,10 +9,6 @@ import java.lang.annotation.Target;
 
 @Qualifier
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD, ElementType.METHOD, ElementType.PARAMETER, ElementType.CONSTRUCTOR, ElementType.TYPE})
-public @interface Generator {
-    NumberOfDigits digits();
-    boolean isprinted();
+@Target({ElementType.FIELD, ElementType.PARAMETER, ElementType.METHOD, ElementType.TYPE})
+public @interface Dummy {
 }
-
-

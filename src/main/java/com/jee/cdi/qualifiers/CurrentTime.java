@@ -8,10 +8,6 @@ import java.lang.annotation.Target;
 
 @Qualifier
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD, ElementType.METHOD, ElementType.PARAMETER, ElementType.CONSTRUCTOR, ElementType.TYPE})
-public @interface Generator {
-    NumberOfDigits digits();
-    boolean isprinted();
+@Target({ElementType.METHOD, ElementType.TYPE, ElementType.PARAMETER, ElementType.CONSTRUCTOR, ElementType.FIELD})
+public @interface CurrentTime {
 }
-
-
